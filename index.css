@@ -1,0 +1,196 @@
+*{
+    font-family: 'Bebas Neue', sans-serif;
+    color: #FFFFFF;
+}
+
+.container{
+    height: 910px;
+    width: auto;
+    background-color: #1E1E1E;;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.parent1{
+    height: 900px;
+    width: 1000px;
+    background: none;
+}
+
+.creambox{
+    height: 100px;
+    width: auto;
+    background: none;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 90px;
+    left: 360px;
+}
+
+.lorem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 100px;
+    left: 200px;
+    z-index: 1;
+}
+
+.icon{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: none;
+    height: 150px;
+    position: absolute;
+    text-align: center;
+    left: 350px;
+    bottom: 70px;
+    width: 600px;
+    z-index: 1;
+
+}
+
+h3{
+    font-size: 4em;
+}
+
+
+
+h1{
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 156px;
+    line-height: 93.5%;
+}
+
+.whitebox{
+    height: 28px;
+    width: 31px;
+    background-color: white;
+    align-self: flex-start;
+}
+
+.redbox{
+    height: 69px;
+    width: 69px;
+    background-color: #E82C4F;
+    align-self: flex-end;
+}
+
+.warmups{
+    height: 250px;
+    width: 500px;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    font-size: 8em;
+    
+}
+.parent2{
+    height: 900px;
+    width: 1000px;
+    background: none;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.outsidewhite{
+    height: 618px;
+    width: 504px;
+    background: none;
+    box-sizing: border-box;
+    border: 60px solid white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
+    
+    
+    
+    
+}
+
+.insidered{
+    height: 240px;
+    width: 240px;
+    background: none;
+    box-sizing: border-box;
+    border: 40px solid #E82C4F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 40px;
+    
+    
+}
+
+.insidewhite{
+    height: 80px;
+    width: 80px;
+    background: none;
+    box-sizing: border-box;
+    border: 20px solid #FFFFFF;
+    
+    
+}
+
+.insideblue{
+    width: 80px;
+    height: 80px;
+    box-sizing: border-box;
+    border: 20px solid #3256A1;
+    position: relative;
+    bottom: 30px;
+    
+    
+}
+
+.roundwhite{
+    width: 80px;
+    height: 80px;
+    box-sizing: border-box;
+    border: 20px solid #FFFFFF;
+    border-radius: 50px;
+    position: relative;
+    bottom: 30px;
+}
+
+.shadow1{
+    height: 644px;
+    width: 558px;
+    background: none;
+    position: absolute;
+    box-sizing: border-box;
+    border: 60px solid #2D2F48;
+    top: 330px;
+    left: 910px;
+}
+
+.shadow2{
+    height: 644px;
+    width: 578px;
+    background: none;
+    position: absolute;
+    box-sizing: border-box;
+    border: 60px solid #48596D;
+    bottom: 500px;
+    left: 1389px;
+}
+
+

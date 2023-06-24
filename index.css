@@ -1,196 +1,128 @@
 *{
-    font-family: 'Bebas Neue', sans-serif;
-    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    color: aliceblue;
 }
 
 .container{
-    height: 910px;
+    display: grid;
+    background-color: whitesmoke;
+    height: 1200px;
     width: auto;
-    background-color: #1E1E1E;;
-    display: flex;
-    position: relative;
-    overflow: hidden;
-
+    grid-gap: 10px;
+    grid-template-columns: repeat(5, 200px);
+    grid-template-rows: repeat(5, 200px);
+    justify-content: center;
+    align-content: center;
+    
+    
 }
 
-.parent1{
-    height: 900px;
-    width: 1000px;
-    background: none;
-}
-
-.creambox{
-    height: 100px;
-    width: auto;
-    background: none;
-    display: flex;
-    align-items: center;
-    position: relative;
-    top: 90px;
-    left: 360px;
-}
-
-.lorem{
+.box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10, .box11, .box12, .box13, .box14, .box15, .box16, .box17, .box18,.box19, .box19, .box20, .box21{
+    background-color: green;
+    box-sizing: border-box;
+    border: 2px solid ;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    top: 100px;
-    left: 200px;
-    z-index: 1;
+
+    
 }
 
-.icon{
-    display: flex;
-    justify-content: space-evenly;
+.box1, .box11,.box3, .box4, .box16, .box8, .box10{
+    background-color: cadetblue;
+
+}
+
+.box1, .box11{
+    grid-row: span 3;
+
+}
+
+.box3{
+    grid-row: span 5;
+}
+
+.box4, .box16{
+    grid-column: span 2;
+}
+
+/*for button styling part*/
+
+.button{ 
+    height: 500px;
+    width: auto;
+    background-color: #322f31;
+    justify-content: center;
     align-items: center;
-    background: none;
-    height: 150px;
-    position: absolute;
-    text-align: center;
-    left: 350px;
-    bottom: 70px;
-    width: 600px;
-    z-index: 1;
-
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
 
-h3{
-    font-size: 4em;
-}
-
-
-
-h1{
-    font-family: 'Bebas Neue';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 156px;
-    line-height: 93.5%;
-}
-
-.whitebox{
-    height: 28px;
-    width: 31px;
+a{ /*this is for styling the main box & the word inside of it*/
     background-color: white;
-    align-self: flex-start;
-}
-
-.redbox{
-    height: 69px;
-    width: 69px;
-    background-color: #E82C4F;
-    align-self: flex-end;
-}
-
-.warmups{
-    height: 250px;
-    width: 500px;
-    background: none;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-h2{
-    font-size: 8em;
-    
-}
-.parent2{
-    height: 900px;
-    width: 1000px;
-    background: none;
-    display: flex;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight:300;
     position: relative;
-    overflow: hidden;
-    justify-content: center;
-    align-items: center;
-    
-
+    padding: 10px 30px;
+    transition: 0.5s;
 }
 
-.outsidewhite{
-    height: 618px;
-    width: 504px;
-    background: none;
-    box-sizing: border-box;
-    border: 60px solid white;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
+a:hover{  /*effect when hovering the cursor*/
+    background: var(--clr);
+    letter-spacing: 0.25em ;
+    box-shadow: 0 0 35px var(--clr);
+}
+
+a::before{ /*to add a black box above the main box*/
+    content: '';
+    position: absolute;
+    inset: 4px;
+    background: #322f31;
+}
+
+a span{ /*to make the word appears at the front*/
+    position: relative;
     z-index: 1;
-    
-    
-    
-    
 }
 
-.insidered{
-    height: 240px;
-    width: 240px;
-    background: none;
-    box-sizing: border-box;
-    border: 40px solid #E82C4F;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px 40px;
-    
-    
-}
-
-.insidewhite{
-    height: 80px;
-    width: 80px;
-    background: none;
-    box-sizing: border-box;
-    border: 20px solid #FFFFFF;
-    
-    
-}
-
-.insideblue{
-    width: 80px;
-    height: 80px;
-    box-sizing: border-box;
-    border: 20px solid #3256A1;
-    position: relative;
-    bottom: 30px;
-    
-    
-}
-
-.roundwhite{
-    width: 80px;
-    height: 80px;
-    box-sizing: border-box;
-    border: 20px solid #FFFFFF;
-    border-radius: 50px;
-    position: relative;
-    bottom: 30px;
-}
-
-.shadow1{
-    height: 644px;
-    width: 558px;
-    background: none;
+a i::before{ /*to add small black line at the top of the box*/ 
+    content: '';
     position: absolute;
-    box-sizing: border-box;
-    border: 60px solid #2D2F48;
-    top: 330px;
-    left: 910px;
+    top: 0;
+    left: 80%;
+    width: 15px;
+    height: 4px;
+    background: #322f31;
+    transform: translateX(-50%) skewX(325deg);/*to make the line bend to the right*/
+    transition: 0.5s;
 }
 
-.shadow2{
-    height: 644px;
-    width: 578px;
-    background: none;
+a:hover i::before{
+    width: 20px; /*to expand the line when moving to the left*/
+    left: 20%; /*set the point for the line to move*/
+}
+
+a i::after{ /*to add small black line at the bottom of the box*/
+    content: '';
     position: absolute;
-    box-sizing: border-box;
-    border: 60px solid #48596D;
-    bottom: 500px;
-    left: 1389px;
+    bottom: 0;
+    left: 20%;
+    width: 15px;
+    height: 4px;
+    background: #322f31;
+    transform: translateX(-50%) skewX(325deg);
+    transition: 0.5s;
 }
 
-
+a:hover i::after{
+    width: 20px;
+    left: 80%;
+}
